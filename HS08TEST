@@ -1,0 +1,20 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main(String[] args)throws java.lang.Exception
+	{
+      try{
+      	 Scanner sc=new Scanner(System.in);
+      	 int withdrawl=sc.nextInt();// your code goes here
+           float bankBalance=sc.nextFloat();
+          if(withdrawl%5==0 && bankBalance>(withdrawl+5))
+      	 System.out.println(bankBalance-withdrawl-0.5);
+      	 else
+      	   System.out.println(bankBalance);
+      	}
+      	catch(Exception e){ return;}
+  }
+}
